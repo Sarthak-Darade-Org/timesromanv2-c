@@ -11,55 +11,55 @@ export type Database = {
     Tables: {
       articles: {
         Row: {
-          id: string;
-          title: string;
-          excerpt: string;
-          content: string;
-          category: string;
-          date: string;
-          author: string;
-          author_image: string;
-          author_bio: string | null;
-          image_url: string;
-          read_time: string;
-          views: number;
-          likes: number;
-          created_at: string;
-          updated_at: string;
+        author: string
+          author_bio: string | null
+          author_image: string | null
+          category: string
+          content: string | null
+          created_at: string | null
+          date: string
+          excerpt: string | null
+          id: string
+          image_url: string
+          likes: number | null
+          read_time: string | null
+          title: string
+          updated_at: string | null
+          views: number | null
         }
         Insert: {
-          id: string;
-          title: string;
-          excerpt: string;
-          content: string;
-          category: string;
-          date: string;
-          author: string;
-          author_image: string;
-          author_bio: string | null;
-          image_url: string;
-          read_time: string;
-          views: number;
-          likes: number;
-          created_at: string;
-          updated_at: string;
+          author: string
+          author_bio?: string | null
+          author_image?: string | null
+          category: string
+          content?: string | null
+          created_at?: string | null
+          date: string
+          excerpt?: string | null
+          id: string
+          image_url: string
+          likes?: number | null
+          read_time?: string | null
+          title: string
+          updated_at?: string | null
+          views?: number | null
         }
         Update: {
-         id: string;
-          title: string;
-          excerpt: string;
-          content: string;
-          category: string;
-          date: string;
-          author: string;
-          author_image: string;
-          author_bio: string | null;
-          image_url: string;
-          read_time: string;
-          views: number;
-          likes: number;
-          created_at: string;
-          updated_at: string;
+          author?: string
+          author_bio?: string | null
+          author_image?: string | null
+          category?: string
+          content?: string | null
+          created_at?: string | null
+          date?: string
+          excerpt?: string | null
+          id?: string
+          image_url?: string
+          likes?: number | null
+          read_time?: string | null
+          title?: string
+          updated_at?: string | null
+          views?: number | null
         }
         Relationships: []
       }
