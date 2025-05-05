@@ -30,36 +30,36 @@ export type Database = {
         Insert: {
           id: string;
           title: string;
-          excerpt?: string;
-          content?: string;
+          excerpt: string;
+          content: string;
           category: string;
           date: string;
           author: string;
-          author_image?: string;
-          author_bio?: string | null;
+          author_image: string;
+          author_bio: string | null;
           image_url: string;
-          read_time?: string;
-          views?: number;
-          likes?: number;
-          created_at?: string;
-          updated_at?: string;
+          read_time: string;
+          views: number;
+          likes: number;
+          created_at: string;
+          updated_at: string;
         }
         Update: {
-          id?: string;
-          title?: string;
-          excerpt?: string;
-          content?: string;
-          category?: string;
-          date?: string;
-          author?: string;
-          author_image?: string;
-          author_bio?: string | null;
-          image_url?: string;
-          read_time?: string;
-          views?: number;
-          likes?: number;
-          created_at?: string;
-          updated_at?: string;
+         id: string;
+          title: string;
+          excerpt: string;
+          content: string;
+          category: string;
+          date: string;
+          author: string;
+          author_image: string;
+          author_bio: string | null;
+          image_url: string;
+          read_time: string;
+          views: number;
+          likes: number;
+          created_at: string;
+          updated_at: string;
         }
         Relationships: []
       }
