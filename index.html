@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Times Roman - AI-Powered News</title>
+    <meta name="description" content="Next-generation AI-powered news platform delivering fresh, unbiased perspectives on global events." />
+    <meta name="author" content="Times Roman" />
+
+    <meta property="og:title" content="Times Roman - AI-Powered News" />
+    <meta property="og:description" content="Next-generation AI-powered news platform delivering fresh, unbiased perspectives on global events." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.ibb.co/Z6ffRH7K/Timesromancir-logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@timesroman" />
+    <meta name="twitter:image" content="https://i.ibb.co/Z6ffRH7K/Timesromancir-logo.png" />
+    
+    <!-- Updated favicon with circular style -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/Z6ffRH7K/Timesromancir-logo.png" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/Z6ffRH7K/Timesromancir-logo.png" />
+    
+    <!-- Check for user's dark mode preference and apply it before render -->
+    <script>
+      (function() {
+        // Check localStorage first
+        const darkModeStored = localStorage.getItem('darkMode');
+        let isDark = false;
+        
+        if (darkModeStored !== null) {
+          isDark = darkModeStored === 'true';
+        } else {
+          // If no stored preference, check system preference
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          localStorage.setItem('darkMode', isDark.toString());
+        }
+        
+        // Apply class to html element
+        document.documentElement.classList.toggle('dark', isDark);
+      })();
+    </script>
+    
+    <!-- google verification! -->
+    <meta name="google-site-verification" content="COlQziRjAn0zvr18-dVJmeng9UcSIcywIPTcOGN1wLY" />
+    <meta name="google-adsense-account" content="ca-pub-7157905321366679">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
